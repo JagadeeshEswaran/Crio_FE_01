@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header style="display: flex; border: 1px solid black;">
+			<img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+			<div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+				<h1>Front End - 1</h1>
+				<h4>Learnign HTML by Doing</h4>
+			</div>
+		</header>
+
+		<h2>Anchor Tags</h2>
+		<h3>Understanding the Use cases</h3>
+		<ul>
+			<li>
+				How do we Incorporate an External Link for a File or a Website in our
+				Web Page
+			</li>
+			<li>For that we use Anchor Tags &lt; a &gt;</li>
+		</ul>
+
+		<h3>What is Anchor Tags ?</h3>
+		<ul>
+			<li>HTML &lt; a &gt; defines a Hyperlink.</li>
+			<li>You can Click on it to jump to a new page or a Section</li>
+			<li>&lt; a &gt; tag has on important attribute -&gt; 'href'</li>
+			<li>'href' -&gt; indicates the link's destination.</li>
+			<li>The content for 'a' tag can be taxt ot even Image</li>
+		</ul>
+		<hr />
+
+		<h2>Important Attributes for Anchor Tag</h2>
+		<ul>
+			<li>
+				<a href="#target"><h3>Target</h3></a>
+			</li>
+			<li>
+				<h3><a href="./page2.html#a_id">id</a></h3>
+			</li>
+		</ul>
+
+		<h3 id="target">Link Target</h3>
+		<h4>Let's Understand a Use case</h4>
+		<p>When we click on a Link,</p>
+		<ul>
+			<li>Either we want to Jump to another Location within the same Tab</li>
+			<li>Or on a New Tab</li>
+		</ul>
+
+		<p>
+			We can Open new Window while Clicking, Just passing an Attribute called
+			"Target"
+		</p>
+
+		<div>
+			<img
+				src="../assets/code_LinkTarget.png"
+				alt="Code Demo for Link Target" />
+		</div>
+
+		<footers style="position: fixed; bottom: 0;">
+			<h2>
+				Go To :
+				<a href="../../../index.html">Index,</a>
+				<a href="../Session02.html">Home,</a>
+
+				<a href="#">1,</a>
+				<a href="./page2.html">2,</a>
+				<a href="./page3.html">3,</a>
+				<a href="./page4.html">4</a>
+				<a href="./Summary.html">Summary</a>
+			</h2>
+		</footer>
+	</body>
 </html>
