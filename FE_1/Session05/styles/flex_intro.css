@@ -1,0 +1,16 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 0 25px;
+
+    /* flex-direction: row-reverse; */
+}
+
+.links {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}

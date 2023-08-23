@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Colors in CSS</title>
+    <html  lang = 'en'>
+    <link rel="stylesheet" href="../css/linking_css.css">
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black;">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+	</header>
+
+    <div>
+      <h1>Using Colors in CSS</h1>
+      <h4>
+        <ul>
+          <li>Colors in HTML & CSS are specified in a few different ways.</li>
+            <ul>
+                <li>Prefefinded Color Name => ~143 colors (Ex.: background-color: "red";)<li>
+                <li>RGB - Red Greed Blue. (ex.: rgb(0,0,255))</li>
+                <li>RGBA - Red Greed Blue Alpha Channel. (ex.: rgba(0,0,255, 0.5))</li>
+            </ul>
+          <li><a href="https://www.w3schools.com/css/css_colors.asp">Read more with W3School..</a></li>
+        </ul>
+      </h4>
+    </div>
+
+    <section>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AQnR5TtXvZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h3>Hover over these boxes to see some effect..</h3>
+
+        <section class="activity">
+            <article class="normal-clr">
+                <h4>I'm 'blue' Color !</h4>
+            </article>
+
+            <article class="rgb-clr">
+                <h4>I'm 'rgb(0,0,255)' Color !</h4>
+            </article>
+
+            <article class="rgba-clr">
+                <h4>I'm 'rgba(0,0,255,0.5)' Color !</h4>
+            </article>
+
+            
+
+
+
+            <style>
+                .activity {
+                    display: flex;
+                    width: 100%;
+                    gap: 20px;
+                    justify-content: space-around;
+                    align-items: center;
+                    color: white;
+                }
+                .normal-clr {
+                    width: 250px;
+                    height: 150px;
+                    background-color: blue;
+
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                .normal-clr:hover h4, .rgb-clr:hover h4, .rgba-clr:hover h4 {
+                    display: none;
+                }
+
+                .normal-clr:hover {
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;                    border-radius: 5px;
+                    transition: 0.5s;
+                    transform: scale(1.1);
+                }
+
+                .normal-clr:hover:before, .rgb-clr:hover:before, .rgba-clr:hover:before {
+                    content: "Hi !!";
+                }
+
+                .rgb-clr:hover {
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;                    border-radius: 5px;
+                    transition: 0.5s;
+                    transform: scale(1.1);
+                }
+
+                .rgba-clr:hover {
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;                    border-radius: 5px;
+                    transition: 0.5s;
+                    transform: scale(1.1);
+                    background-color: rgba(0,0,255,0.5);
+                    color: black;
+                }
+
+                .rgb-clr {
+                    width: 250px;
+                    height: 150px;
+                    background-color: blue;
+
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                .rgba-clr {
+                    width: 250px;
+                    height: 150px;
+                    background-color: blue;
+
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+            </style>
+        </section>
+
+    </section>
+
+    
+
+
+
+    
+
+   
+    
+    <footers style="position: fixed; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session04.html">Home,</a>
+  
+          <a href="./selector_specificity.html">1,</a>
+          <a href="./cascading_in_css.html">2,</a>
+          <a href="./Inheritance_in_css.html">3,</a>
+          <a href="./using_devTool.html">4,</a>
+          <a href="#">5,</a>          
+          <a href="./fonts_in_css.html">6,</a>          
+          <a href="./byte_Overview.html">7,</a>           
+          
+        </h2>
+      </footer>
+  </body>
+</html>
