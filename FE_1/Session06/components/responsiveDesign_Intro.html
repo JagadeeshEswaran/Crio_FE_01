@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Responsive Design</title>
+    <html  lang = 'en'>
+
+    <!-- For Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black;">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+    </header>
+
+    <div>
+      <h1>Introduction to Responsive Design</h1>
+      <h4>
+        <ul>
+          <li>When we want out <span style="color: rgb(218, 161, 3);">website to flow freely across all screen resolutions & sizes.</span></li>
+          <li>A website "respond" according to the screen size.</li>
+          <li>Designers generally provide <span style="color: rgb(218, 161, 3);">mockups of a website</span> which tell a developer how the website should look on different screens.</li>
+          <li>To style elements for the different screen sizes, We use <span style="color: rgb(218, 161, 3);">@media</span></li>          
+      </h4>
+
+      <h2>Ground Rules of responsive design</h2>
+      <h4>
+        <ul>
+          <li>Use relative units <span style="color: rgb(218, 161, 3);">like rem, %</span> in place of absolute units</li>
+          <li>Use fluid containers for content as much as you can <span style="color: rgb(218, 161, 3);">(i.e flexbox)</span></li>
+          <li>Try <span style="color: rgb(218, 17, 3);">not to use </span> fixed width & height, We can use <span style="color: rgb(218, 161, 3);">min-width or max-width</span>(counterparts)</li>
+          <li>Try to design <span style="color: rgb(218, 161, 3);">Mobile First Websites</span> - Mobiles are generally single column. -> Less CSS written.</li>   
+          <li>Look after these points :</li>
+            <ol>
+              <li>Start with a small screen, then test on larger devices and see where the design "breaks"</li>
+              <li>Use <span style="color: rgb(218, 161, 3);">@media</span> queries to define breakpoints of a page.</li>
+            </ol> 
+          <li>We need to use this meta tag to design responsive Websites.li</li>
+          <span style="color: rgb(216, 19, 19);">"&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" &gt;"</span>     
+      </h4>
+
+    </div>   
+    
+    <hr>
+
+    <section>
+      <h2>Breakpoints</h2>
+      <h4>
+        <ul>
+          <li>Breakpoints define the <span style="color: rgb(218, 161, 3);">width of different screen sizes</span> on which our website can be viewed.</li>
+          <li>Best way to think -> <span style="color: rgb(218, 161, 3);">Starting from mobile, the "point" where your design starts to "break"</span></li>
+          <li>Some standard break points are, </li>
+             <img src="../assets/std_breakpoints.png" alt="Standard breakpoints">
+          <li>We can conditionally define CSS for different breakpoints</li>
+      </h4>
+    </section>
+    
+    <hr>
+
+    
+    <h1>A </h1>
+    <h1> A</h1>
+   
+
+    <footers style="position: fixed; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../index.html">Index,</a>
+          <a href="../Session06.html">Home,</a>
+  
+          <a href="./flexbox_items.html">1,</a>
+          <a href="./positioning_flexbox.html">2,</a>
+          <a href="#">3,</a>
+          <a href="./media_queries.html">4,</a>       
+          <a href="./bootstrap_intro.html">5,</a>       
+          <a href="./navbar_bootstrap.html">6</a>       
+          
+        </h2>
+      </footer>
+  </body>
+</html>

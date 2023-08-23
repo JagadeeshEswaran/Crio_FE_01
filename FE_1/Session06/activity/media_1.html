@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Activity - @media rule</title>
+    <html  lang = 'en'>
+    <link rel="stylesheet" href="../styles/flex_intro.css">
+
+    <!-- To enable @media rule -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black;">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+	</header>
+
+    <div>
+      <h1>Activity - @media rule</h1>
+      <ul>
+        <li>Create a Simple HTML page with a Heading & Paragraph.</li>
+        <li>Set @media rule for Small & larger screens.</li>
+        <li>Use breakpoint - 400px & 1000px.</li>
+        <li>Change background colors for small & large screen sizes.</li>
+      </ul>
+    </div>
+
+
+    <!-- Center the Child Element -->
+    <section class="activity">
+        <section class="parent">
+            
+        </section>
+    </section>
+
+    <style>
+        .activity {
+            border: 1px solid black;
+            width: 100%;
+            height: 600px;
+
+            background-color: green;
+        }
+
+        .parent {
+            display: flex;
+            flex-wrap: wrap;            
+        }
+
+        .parent > article {
+            width: 8rem;
+            height: 8rem;
+            margin: 1rem;
+
+            border: 1px solid black;
+        }
+
+
+        /* Responsive Styling */
+        @media (max-width: 1000px ) {
+            .activity {
+                background-color: orange;
+                content: "Small Screen";
+            }
+        }
+        
+        @media (max-width: 400px ) {
+            .activity {
+                background-color: red;
+                content: "Small Screen";
+            }
+        }
+    </style>
+
+
+    
+    <footers style="position: fixed; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session06.html">Home,</a>
+  
+          <a href="../components/flexbox_items.html">1,</a>
+          <a href="../components/positioning_flexbox.html">2,</a>
+          <a href="../components/responsiveDesign_Intro.html">3,</a>
+          <a href="../components/media_queries.html">4,</a>       
+          <a href="../components/bootstrap_intro.html">5,</a>       
+          <a href="../components/navbar_bootstrap.html">6</a>   
+          
+        </h2>
+      </footer>
+  </body>
+</html>
