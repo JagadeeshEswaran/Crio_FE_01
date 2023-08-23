@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Selector Specificity</title>
+    <html  lang = 'en'>
+    <link rel="stylesheet" href="../css/linking_css.css">
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black;">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+	</header>
+
+    <div>
+      <h1>Selector Specificity</h1>
+      <h4>
+        <ul>
+          <li>When two CSS rules are in Conflict, it is resolved by <span style="color: blue;">using CSS Specificity</span></li>
+          <li>More specific the selector, higher the preference.</li>
+          <li>Hierarchy,</li>
+                <ol>
+                    <li>In-line Styling</li>
+                    <li>ID Selectors</li>
+                    <li>Class Selectors</li>
+                    <li>Element Selectors</li>
+                </ol>
+          <li>When selectors of equal Specificity are in conflict - <span style="color: blue;">Lower (or Latest) rule in the Stylesheet wins.</span></li>
+          <li><a href="https://devopedia.org/css-specificity">Read More...</a></li>
+        </ul>
+      </h4>
+      <img src="https://www.tutorialstonight.com/assets/css/css-specificity.png" alt="CSS Specificity - Reference Pic" width="500" height="500">
+    </div>
+
+    <section class="predictColor">
+        <h2>Ex.: Let's Predit the Color</h2>
+        <img src="../assets/predit_color.png" alt="Predict Color Excercise">
+
+        <section class="parent">
+            <div class="child">
+                <p>This is a Para inside child.</p>
+            </div>
+        </section>
+
+        <style>
+            .predictColor {
+                width: 50%;
+                height: 2rem;
+            }
+
+            .parent {
+                width: 100%;
+                height: 2rem;
+                color: steelblue;
+                background-color: lightcyan;
+            }
+        </style>
+    </section>
+
+   
+    
+    <footers style="position: fixed; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session04.html">Home,</a>
+  
+          <a href="#">1,</a>
+          <a href="./cascading_in_css.html">2,</a>
+          <a href="./Inheritance_in_css.html">3,</a>
+          <a href="./using_devTool.html">4,</a>
+          <a href="./colors_in_css.html">5,</a>          
+          <a href="./fonts_in_css.html">6,</a>          
+          <a href="./byte_Overview.html">7,</a>          
+          
+        </h2>
+      </footer>
+  </body>
+</html>
