@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Creating Navbar with Bootstrap - Part 2</title>
+    <html  lang = 'en'>
+
+    <!-- To enable @media rule -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To use Bootstrap, we need charset Meta Tag -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black;">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+    </header>
+
+    <div>
+      <h6><a href="../../Session06/components/navbar_bootstrap.html">Creating Navbar - Part 1</a></h6>
+      <h4>Creating Navbar with Bootstrap - Part 2</h4>
+      <article>
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget1">Step 1 -> Creating a target</h5>
+                <div class="collapse" id="collapseTarget1">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Wrap the ul inside a div -> which will become <b>our target to toggle</b> on button click.</li>
+                            <li>Give it a class "navbar-collapse" to give it the positioning it needs.(i.e) Under the Navbar logo</li>
+                            <li>Add an "id = navBarTarget", which will use later to connect the button.</li>          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget2">Step 2 -> Adding a Button & Functionality</h5>
+                <div class="collapse" id="collapseTarget2">
+                    <div class="card card-body">
+                        <ul>
+                            <li>We can use "data-*" attribute, which are custom attributes.</li>
+                            <li>We can point it to any element we want. We're going to target "id = navBarTarget".</li>
+                            <li>Add a class "collapse" to the "navBarTarget" div</li>
+                            <li>Add attributes -> <b>data-bs-toggle="collapse"</b> and <b>"data-bs-target="#navBarTarget"</b> to the button.</li>      
+                            <li>This will <b>add a collapse Functionality</b> to the menu targeting "navBarTarget" div.</li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget3">Step 3 -> Adding Hamburger Menu</h5>
+                <div class="collapse" id="collapseTarget3">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Final step is to add a Hamburger icon using Bootstrap class.</li>
+                            <li>Add a span tag within the button element, and add <b>"navbar-toggler-icon"</b> class to it.</li>
+                            <li>Our Navbar is ready for mobile !</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget4">Step 4 -> Making Navbar responsive</h5>
+                <div class="collapse" id="collapseTarget4">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Our navbar looks great for mobile screen, what about larger screens.</li>
+                            <li>To make it responsive, first we need to specify <b>break point & behaviour</b></li>
+                            <li>Breakpoints in Bootstrap are defined as <b>".class-{breakpoint}-{value}"</b></li>
+                            <li>On large screens, our navbar should be spread out its items show it.</li>
+                            <li>To achieve that, we can add <b>"navbar-expand-*"</b></li>
+                            <li>We can spcify a class <b>"navbar-expand-lg"</b> at outer div with "navbar" class.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget5">Step 4 -> Making Navbar responsive</h5>
+                <div class="collapse" id="collapseTarget5">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Our navbar looks great for mobile screen, what about larger screens.</li>
+                            <li>To make it responsive, first we need to specify <b>break point & behaviour</b></li>
+                            <li>Breakpoints in Bootstrap are defined as <b>".class-{breakpoint}-{value}"</b></li>
+                            <li>On large screens, our navbar should be spread out its items show it.</li>
+                            <li>To achieve that, we can add <b>"navbar-expand-*"</b></li>
+                            <li>We can spcify a class <b>"navbar-expand-lg"</b> at outer div with "navbar" class.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget6">Step 5 -> Fixing alignment</h5>
+                <div class="collapse" id="collapseTarget6">
+                    <div class="card card-body">
+                        <ul>
+                        <li>Now, we can see all list-item are places near Logo. Is it look nice..</li>
+                        <li>We can add some spacing between "logo" and "list-item"</li>
+                        <li>For that, add <b>"justify-content-end"</b> with div with "navBarTarget" div</li>
+                        <li>On large screens, our navbar should be spread out its items show it.</li>
+                        <li>To achieve that, we can add <b>"navbar-expand-*"</b></li>
+                        <li>We can spcify a class <b>"navbar-expand-lg"</b> at outer div with "navbar" class.</li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+
+      </article>
+    </div>
+    
+   <!-- Activity - Creating a simple navbar -->
+    <section> 
+        <h3>Activity Area</h3>
+        <nav class="navbar container-fluid navbar-light navbar-expand-lg" style="border: 1px solid black;">
+            <h1>My Logo</h1>
+            <button 
+                class="navbar-toggler" 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navBarTarget"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navBarTarget">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Solutions</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+   <h1>A</h1>
+   <h1>A</h1>
+
+    <footers style="position: fixed; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session06.html">Home,</a>
+  
+          <a href="./flexbox_items.html">1,</a>
+          <a href="./positioning_flexbox.html">2,</a>
+          <a href="./responsiveDesign_Intro.html">3,</a>
+          <a href="./media_queries.html">4,</a>       
+          <a href="./bootstrap_intro.html">5,</a>       
+          <a href="./navbar_bootstrap.html">6,</a>       
+          <a href="./take_home.html">7</a>       
+          
+        </h2>
+      </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
