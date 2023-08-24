@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Grid Positioning</title>
+    <html  lang = 'en'>
+
+    <!-- To enable @media rule -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To use Bootstrap, we need charset Meta Tag -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black;">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+    </header>
+
+    <div>
+        <h4>Grid Positioning</h4>
+        <ul>
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget4">Activity - Create a 3 X 4 Grid</h5>
+                <div class="collapse" id="collapseTarget4">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Create a wrapper or parent div with class <b>"gridParent"</b></li>
+                            <li>Add children div with class <b>"gridChild"</b></li>
+                            <li>Add tyles to define color for each child with "id selectors"</li>
+                        </ul>
+                    </div>
+
+                    <!-- Activity - Create 3 X 4 Grid -->
+                    <div class="gridParent">
+                        <div class="gridChildren" id="child1">1</div>
+                        <div class="gridChildren" id="child2">2</div>
+                        <div class="gridChildren" id="child3">3</div>
+                        <div class="gridChildren" id="child4">4</div>
+                        <div class="gridChildren" id="child5">5</div>
+                        <div class="gridChildren" id="child6">6</div>
+                    </div>
+
+                    <style>
+                        .gridParent {
+                            display: grid;
+                            grid-template-rows: repeat(2, 8rem);
+                            grid-template-columns: repeat(3, 3fr);
+
+                            margin-right: 1rem;
+                        }
+
+                        .gridChildren {
+                            border: 1px solid black;
+                        }
+
+                        #child1 {
+                            background-color: red;
+                        }
+
+                        #child2 {
+                            background-color: violet;
+                        }
+                        
+                        #child3 {
+                            background-color: orange;
+                        }
+
+                        #child4 {
+                            background-color: yellow;
+                        }
+
+                        #child5 {
+                            background-color: green;
+                        }
+
+                        #child6 {
+                            background-color: steelblue;
+                        }
+                    </style>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget5">Activity 2 - Grid Challenge</h5>
+                <div class="collapse" id="collapseTarget5">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Create a grid shown in the Image</li>
+                                <img src="../assets/grid_challenge.png" alt="Grid Challenge Image">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </ul>
+    </div>
+
+   <!-- Activity - Creating a simple navbar -->
+   <section class="activitySection"> 
+            <h3>Activity Area</h3>
+            <div class="grid-div">
+            <div class="child-div child1">1</div>
+            <div class="child-div child2">2</div>
+            <div class="child-div child3">3</div>
+            <div class="child-div child4">4</div>
+            <div class="child-div child5">5</div>
+            <div class="child-div child6">6</div>
+            </div>
+        </section>
+
+
+    <style>      
+        .activitySection {
+            border: 1px solid black;
+            height: 500px;
+        }
+    
+        .grid-div {
+            display: grid;
+            grid-template-rows: repeat(4, 4rem);
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .child-div {
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .child1 {
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .child2 {
+            grid-row-start: 1;
+            grid-row-end: 5;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .child3 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .child4 {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .child5 {
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+        .child6 {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    </style>
+    
+
+   <h1>A</h1>
+   <h1>A</h1>
+
+    <footers style="position: fixed; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session06.html">Home,</a>
+  
+          <a href="./flexbox_items.html">1,</a>
+          <a href="./positioning_flexbox.html">2,</a>
+          <a href="./responsiveDesign_Intro.html">3,</a>
+          <a href="./media_queries.html">4,</a>       
+          <a href="./bootstrap_intro.html">5,</a>       
+          <a href="./navbar_bootstrap.html">6,</a>       
+          <a href="./take_home.html">7</a>       
+          
+        </h2>
+      </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

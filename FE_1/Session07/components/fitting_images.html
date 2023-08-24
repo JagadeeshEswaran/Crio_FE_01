@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Fitting Images inside div</title>
+    <html  lang = 'en'>
+
+    <!-- To enable @media rule -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To use Bootstrap, we need charset Meta Tag -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+   <style>
+        .activitySection {
+            height: 700px;
+            border: 1px solid black;
+            background-color: rgb(19, 18, 18);
+        }
+
+        .activitySection > h3 {
+            color: whitesmoke;
+        }
+
+        .bannerDiv {
+            height: 25rem;
+        }
+
+        .bannerDiv > img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /* object-fit: contain; */
+        }
+   </style>
+
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black;">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+    </header>
+
+    <div>
+        <h4>Fitting Images inside div</h4>
+        <ul>
+            <li>Often times, Cards have images in on part & the content in other Part of it.</li>
+            <li>We can achieve this effect by <b>"nesting"</b> an <b>"img" tag</b> inside <b>"div" tag</b></li>
+            <li>Then set <b>"width and height"</b> of the image to <b>"100%"</b></li>
+            <li>Since % are relative units to parent, the image will take up the size of the parent div</li>
+        </ul>
+    </div>
+
+    <div>
+        <h4>Adding a Hero Image</h4>
+        <article>
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget1">Step 1 -> Creating a target</h5>
+                <div class="collapse" id="collapseTarget1">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Create a header element and nest the existing nav inside it.</li>
+                            <li>Add an <b>"img"</b> nested inside a new <b>"div"</b> above the <b>"nav"</b> element.</li>
+                            <!-- https://images.unsplash.com/photo-1632200786066-6d0ea88116b0?auto=format&fit=crop&w=934&q=80 -->
+                            <li>Define a height of <b>"16rem"</b> for the <b>"header"</b> and make the image fir 100% of the height and width of the parent.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget2">Note -> How to prevent Image Squishing ?</h5>
+                <div class="collapse" id="collapseTarget2">
+                    <div class="card card-body">
+                        <ul>
+                            <li><b>"Object-fit" -> </b> prevents squishing. <b>i.e Maintains aspect ratio.</b></li>
+                            <li><b>"object-fit: contain" -> </b> Resize image to fit the given parent dimensions <b>"without clipping"</b></li>
+                            <li><b>"object-fit: cover" -> </b> Does the same, but image is <b>"clipped"</b></li>
+                                <img src="../assets/aspect-ratio.png" alt="What is aspect ratio ?">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    
+   <!-- Activity - Creating a simple navbar -->
+    <section class="activitySection"> 
+        <h3>Activity Area</h3>
+        <header>
+            <div class="bannerDiv">
+                <img src="https://images.unsplash.com/photo-1632200786066-6d0ea88116b0?auto=format&fit=crop&w=934&q=80" alt="Hero Image for the banner">
+            </div>
+            <nav class="navbar container-fluid navbar-dark bg-dark navbar-expand-lg" style="border: 1px solid black;">
+                <h1 class="navbar-brand">My Logo</h1>
+                <button 
+                    class="navbar-toggler" 
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navBarTarget"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-end" id="navBarTarget">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Solutions</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>
+
+   <h1>A</h1>
+   <h1>A</h1>
+
+    <footers style="position: fixed; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session06.html">Home,</a>
+  
+          <a href="./flexbox_items.html">1,</a>
+          <a href="./positioning_flexbox.html">2,</a>
+          <a href="./responsiveDesign_Intro.html">3,</a>
+          <a href="./media_queries.html">4,</a>       
+          <a href="./bootstrap_intro.html">5,</a>       
+          <a href="./navbar_bootstrap.html">6,</a>       
+          <a href="./take_home.html">7</a>       
+          
+        </h2>
+      </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
