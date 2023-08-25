@@ -1,0 +1,4 @@
+.flash_card img {
+    width: 15rem;
+    object-fit: cover;
+}

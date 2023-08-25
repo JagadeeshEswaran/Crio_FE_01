@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>Positioning Strategies</title>
+    <html  lang = 'en'>
+
+    <!-- To enable @media rule -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To use Bootstrap, we need charset Meta Tag -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black; position: sticky; top: 0; background-color: rgba(196, 194, 194, 0.7); backdrop-filter: blur(5px);">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+    </header>
+
+    <div style="height: 100vh;">
+      <h4>Positioning Strategies</h4>
+      <article>
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget3">Strategy 1 - Static</h5>
+                <div class="collapse" id="collapseTarget3">
+                    <div class="card card-body">
+                        <ul>
+                            <li>This is default for all the element in HTML.</li>
+                            <li>It means that the elements will be placed <b>"normally"</b>(i.e)</li>
+                                <ul>
+                                    <li>Vertically stacking for block &</li>
+                                    <li>Horizontal for in-line elements.</li>
+                                </ul>
+                            <li>Attributes like <b>left, right, top, bottom & z-index</b> will have no effect with <b>"Static"</b></li>
+                            <li>
+                                <div>
+                                    <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#gob_l1">Activity 1 - Game of Boxes</h5>
+                                    <div class="collapse" id="gob_l1">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>Setup the Game of Boxes system by saving the given link.</li>
+                                                <li><a href="https://codesandbox.io/s/game-of-boxes-jwqgw?file=/styles.css">https://codesandbox.io/s/game-of-boxes-jwqgw?file=/styles.css</a></li>
+                                                <li>We can fork it & start using it</li>
+                                                <li>Open Position: Static to parent, child-1, child-2, child-3 in styles.css file.</li>
+                                                <li>After setting this, we can see this image</li>
+                                                    <img src="../assets/positioning_act1.png" alt="Activity 1 - Game of Boxes">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget6">Strategy 2 - Absolute</h5>
+                <div class="collapse" id="collapseTarget6">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Allows us to place an element exactly where we want!</li>
+                            <li>We can us attributes to set the Location weherever we want.</li>
+                            <li>These values are relative to the next (or Closest) parent element's positioning</li>
+                            <li>An absolute element is <b>removed from the flow of the page</b>.</li>
+                            <li>(i.e) These elements won't affect other elements.</li>
+                            <li>If <b>no position attribute</b> in parent, then by default the element is <b>place relative to the page itself</b>.</li>                            
+                            <li><b>Caution!</b> We should be careful of not to overuse it.</li>
+                            <li>
+                                <div>
+                                    <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#gob_l2">Activity 2 - Game of Boxes</h5>
+                                    <div class="collapse" id="gob_l2">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>Make the child-1 & child-2 absolute in position. What do we observe ? Reason ?</li>
+                                                <li>Place child-1 at 50% the screen width from right</li>
+                                                <li>Place child-2 at 50% the screen width from left</li>
+                                                <li>The final position of the boxes should look like this.</li>
+                                                    <img src="../assets/positioning_act2.png" alt="Activity 2 - Game of Boxes">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget7">Strategy 3 - Relative</h5>
+                <div class="collapse" id="collapseTarget7">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Relative means -> <b>"Relative to its original position on the page"</b></li>
+                            <li>In essence, if we set <b>position: relative</b> but no attributes, then it will have <b>NO effect on positioning.</b></li>
+                            <li>If we set a position attributes to some lenght -> element will shift from its original position.</li>
+                            <li>
+                                <div>
+                                    <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#sup_power1">Super Power Added</h5>
+                                    <div class="collapse" id="sup_power1">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li><b>position: relative, absolute & fixed</b> adds one more ability to an element.</li>
+                                                <li>It adds the <b>"z-index"</b> property.</li>
+                                                <li>This is the ability to be <b>stacked over other elements.</b></li>
+                                                <li>Even is no z-index is given also, the element appears on top of "static" positioned elements.</li>
+                                                    <img src="../assets/z-index.png" alt="z-index illustration">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#gob_l3">Activity 3 - Game of Boxes</h5>
+                                    <div class="collapse" id="gob_l3">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>Reset the positioning by removing the content under the stub comments.</li>
+                                                <li>Add <b>position: relatibe</b> to parent</li>
+                                                <li>Now the parent have, z-index & we can position it's children with absolute positioned.</li>
+                                                <li>Achieve the image below,</li>
+                                                    <img src="../assets/positioning_act3.png" alt="Activity 2 - Game of Boxes">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#gob_l4">Activity 4 - Game of Boxes</h5>
+                                    <div class="collapse" id="gob_l4">
+                                        <div class="card card-body">
+                                            <ul>
+                                                <li>Achieve the image below,</li>
+                                                    <img src="../assets/positioning_act4.png" alt="Activity 4 - Game of Boxes">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget8">Strategy 4 - Fixed</h5>
+                <div class="collapse" id="collapseTarget8">
+                    <div class="card card-body">
+                        <ul>
+                            <li>With <p>position: fiex</p> the element is positioned relative to the viewport or browser window.</li>
+                            <li>A fixed element stays where it was when the content is scrolled.</li>
+                            <li>This is useful for <b>navigation bars & headers.</b></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget9">Strategy 5 - Sticky</h5>
+                <div class="collapse" id="collapseTarget9">
+                    <div class="card card-body">
+                        <ul>
+                            <!-- <li>With <p>position: fiex</p> the element is positioned relative to the viewport or browser window.</li>
+                            <li>A fixed element stays where it was when the content is scrolled.</li>
+                            <li>This is useful for <b>navigation bars & headers.</b></li>                             -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+      </article>
+    </div>
+    
+   <!-- Activity - Creating a simple navbar -->
+
+    <footers style="position: sticky; bottom: 0;">
+        <h4>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session07.html">Home,</a>
+  
+          <a href="#">1,</a>
+          <a href="./fitting_images.html">2,</a>
+          <a href="./css_grid.html">3,</a>
+          <a href="./grid_positioning.html">4,</a>       
+          <a href="./qStatic_module1_intro.html">5,</a>       
+          <!-- <a href="./navbar_bootstrap.html">6,</a>       
+          <a href="./take_home.html">7</a>        -->
+          
+        </h4>
+      </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
