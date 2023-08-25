@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta Data goes here -->
+    <title>CSS Positioning</title>
+    <html  lang = 'en'>
+
+    <!-- To enable @media rule -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- To use Bootstrap, we need charset Meta Tag -->
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <header style="display: flex; border: 1px solid black; position: sticky; top: 0; background-color: rgba(196, 194, 194, 0.7); backdrop-filter: blur(5px);">
+      <img src="https://qus08.csb.app/Session_2/logo.svg" alt="">
+      <div style="border-left: 1px solid black; width: 100%; padding-left: 25px;">
+          <h1>Front End - 1</h1>
+          <h4>Learnign HTML by Doing</h4>
+      </div>
+    </header>
+
+    <div>
+      <h4>Positioning in CSS</h4>
+      <article style="height: 100vh;">
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget1">What is the use case ?</h5>
+                <div class="collapse" id="collapseTarget1">
+                    <div class="card card-body">
+                        <ul>
+                            <li>When we want to <b>"control the layout and arrangement of elements"</b> on a web page.</li>      
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget2">Let's understand CSS Positioning</h5>
+                <div class="collapse" id="collapseTarget2">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Position property in CSS helps us to <b>manipulate the location of an Element.</b></li>
+                            <li>There are 5 different strategies we can follow</li>
+                                <ol>
+                                    <li>Static</li>
+                                    <li>Absolute</li>
+                                    <li>Relative</li>
+                                    <li>Fixed</li>
+                                    <li>Sticky</li>
+                                </ol>
+                            <li>Position is a non-cascading <b>(non0-inherited)</b> property.</li>
+                            <li>Position property goes hand in hand with Positioning attributes like <b>left, right, top, bottom and Z-index</b> properties.</li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="btn btn-primary" data-bs-toggle="collapse" role="button" href="#collapseTarget10">Display Properties</h5>
+                <div class="collapse" id="collapseTarget10">
+                    <div class="card card-body">
+                        <ul>
+                            <li>Since every element on the page is a rectangular box, the display property determines how that box behaves.</li>
+                            <li>Some common values,</li>
+                                <ul>
+                                    <li><b>inline -> </b> Make the box (or Block element) an in-line element</li>
+                                    <li><b>block -> </b> Default for all block elements & can Make the box (or In-line) element and Block Element.</li>
+                                    <li><b>inline-block -> </b> Make the box a block element which would behave like in-line element.</li>
+                                    <li><b>flex -> </b> Makes the element behave flex box container.</li>
+                                    <li><b>grid -> </b> Makes the element behave flex grid container.</li>
+                                </ul>                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+      </article>
+    </div>
+    
+   <!-- Activity - Creating a simple navbar -->
+
+    <footers style="position: sticky; bottom: 0;">
+        <h2>
+          Go To :
+          <a href="../../../index.html">Index,</a>
+          <a href="../Session08.html">Home,</a>
+  
+          <a href="#">1,</a>
+          <a href="./positioning_strategies.html">2,</a>
+          <a href="./qTrip_module2.html">3</a>          
+        </h2>
+      </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
