@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+}
+
+#sidebar_icon {
+  display: none;
+  position: sticky;
+  top: 15rem;
+  right: 100%;
+  /* transform: rotate(90deg); */
+  /* transform: rotate(45deg); */
+}
+
+#sidebar_1 {
+  display: block;
+  border: 1px solid black;
+  border-left: none;
+  width: 20vw;
+  height: 80vh;
+  padding: 2rem 0 10rem 0;
+  margin-top: 5rem;
+  border-radius: 0 5px 5px 0;
+}
+
+#sidebar_1 h5 {
+  font-weight: bolder;
+  font-size: medium;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+
+  color: blueviolet;
+}
+
+#sidebar_1 p {
+  font-weight: medium;
+  padding-left: 1rem;
+  overflow: hidden;
+}
+
+.sidebar_1_p {
+  overflow: hidden;
+}
+
+#sidebar_icon {
+  width: 2rem;
+}
+
+#sidebar_icon:hover {
+  display: none;
+}
+
+#sidebar_1 p:hover {
+  background-color: blanchedalmond;
+  font-weight: bolder;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
